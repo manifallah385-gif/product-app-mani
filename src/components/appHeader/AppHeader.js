@@ -4,40 +4,18 @@ import { useState } from "../../package/state/index.js"
 
 const AppHeader = () => {
 
-    // let message = "ProductPageBtn"
+    const [state, setState, getState] = useState("Products")
+    const [landingTextState, setLandingTextState, getLandingTextState] = useState("Add Product")
 
-    const [state, setState, getState] = useState("ProductPageBtn")
-    const [landingTextState, setLandingTextState, getLandingTextState] = useState("LandingPageBtn")
-
-    const [productState, setProductState, getProductState] = useState([{title: "title 1", description: "description"}])
-
-    console.log("productState ==>", productState)
-
-    // console.log("state ==>", getState())
 
     const navigation = useNavigation()
 
     const productPageBtnClickHandler = () => {
-        // window.location.hash = "#/product-list"
-        navigation("/product-list")
-
-        // message = "Product Product Page Btn"
-
-        setState("Product Product Page Btn")
-
-        console.log("state ==>", state)
-
-
-        console.log("state 2 ==>", getState())
+        navigation("/")
     }
 
     const landingPageBtnClickHandler = () => {
-        // window.location.hash = "#/"
-        navigation("/")
-
-        console.log("state ==>", state)
-
-        setLandingTextState("Landing Landing Page Btn")
+        navigation("/create")
     }
     
 

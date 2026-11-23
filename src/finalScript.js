@@ -1,11 +1,11 @@
 import { createBrowserRouter, useNavigation } from "./package/router/router.js";
-import { LandingPage, ProductListPage } from "./pages/index.js";
+import { LandingPage, ProductListPage, CreateProductPage } from "./pages/index.js";
 
 
 const navigation = useNavigation()
 navigation("/")
 
 createBrowserRouter([
-    { path: "/", element: () => { return LandingPage({ text: "Landing Page..." }) } },
-    { path: "/product-list", element: () => { return ProductListPage() } },
+    { path: "/", element: () => { return ProductListPage() } },
+    { path: "/create", element: () => { return CreateProductPage() } },    
 ])
