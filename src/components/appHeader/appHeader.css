@@ -1,5 +1,8 @@
 .app-header {
-    width: 100%;
-    height: 80px;
-    background: black;
+    display: flex;
+    justify-self: center;    
+    width: 478px;
+    height: 56px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(17, 17, 27);
 }

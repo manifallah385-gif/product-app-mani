@@ -6,6 +6,7 @@ import {AppHeader} from "../../components/index.js"
 
 const LandingPage = ({text}) => {
     return (
+        
         `<div class="landing-page">
             ${AppHeader()}
             <p>${text}</p>

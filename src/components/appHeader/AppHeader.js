@@ -22,8 +22,11 @@ const AppHeader = () => {
     return (
         html`
             <div class="app-header">
-                <button onclick=${() => { productPageBtnClickHandler() }} id="ProductPageBtn">${getState()}</button>
-                <button onclick=${() => { landingPageBtnClickHandler() }} id="LandingPageBtn">${getLandingTextState()}</button>
+                <div>Product List</div>            
+                <div>
+                    <button onclick=${() => { productPageBtnClickHandler() }} id="ProductPageBtn">${getState()}</button>
+                    <button onclick=${() => { landingPageBtnClickHandler() }} id="LandingPageBtn">${getLandingTextState()}</button>
+                </div>  
             </div>
         `
     )
