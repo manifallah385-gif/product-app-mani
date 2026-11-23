@@ -8,19 +8,22 @@ body {
     margin-bottom:20px ;
     /* height:620px ; */
     width: 478px;
-    border: 1px solid rgb(56, 56, 189); 
+    border: 1px solid rgb(158, 158, 158); 
     border-radius: 10px;    
     display: flex;
     justify-self: center; 
     justify-content: center;  
     flex-flow: column wrap;
     gap: 30px;
+    /* background-color: rgb(238, 237, 237); */
 
 }
 #addProductBox > input{
-    border: 1px solid rgb(31, 31, 39);    
-    border-radius: 10px;
+    border: 1px  rgb(31, 31, 39);    
+    border-radius: 25px;
     height: 35px;
+    background-color: rgb(238, 237, 237);
+    vertical-align:top;
 }
 #addProductBox > #description{
     height: 120px;
