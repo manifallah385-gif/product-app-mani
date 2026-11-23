@@ -3,20 +3,38 @@ body {
     font-family: sans-serif;
 }
 #addProductBox{
+    padding: 20px 0 20px 0;
     margin-top:40px ;
     margin-bottom:20px ;
-    height:620px ;
+    /* height:620px ; */
     width: 478px;
     border: 1px solid rgb(56, 56, 189); 
+    border-radius: 10px;    
     display: flex;
-    justify-self: center;   
+    justify-self: center; 
+    justify-content: center;  
     flex-flow: column wrap;
-    gap: 15px;
+    gap: 30px;
+
 }
 #addProductBox > input{
     border: 1px solid rgb(31, 31, 39);    
     border-radius: 10px;
-    height: 20px;
+    height: 35px;
+}
+#addProductBox > #description{
+    height: 120px;
+}
+#addProductBox > button{  
+    border-radius: 10px;
+    height: 35px;
+    background-color: crimson;
+    width: 416px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
 }
 /* #root{
     border: 1px solid rgb(17, 17, 27);

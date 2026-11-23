@@ -24,7 +24,7 @@ const CreateProductPage = () => {
         <div>
             <form onsubmit=${submitHandler} id="addProductBox">
             <input type="text" name="title" placeholder="Title">
-            <input type="text" name="description" placeholder="Description">
+            <input type="text" id="description" name="description" placeholder="Description">
             <input type="text" name="date" placeholder="YYYY/MM/DD">
             <button type="submit">Add Product</button>
             </form>
